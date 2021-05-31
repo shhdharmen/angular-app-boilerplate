@@ -1,4 +1,4 @@
-name: Test and build
+name: Test angular app
 
 on:
   push:
@@ -14,12 +14,16 @@ jobs:
       - name: Use Node.js
         uses: actions/setup-node@v1
         with:
-          node-version: "12.x"
+          node-version: "14.x"
 
-      - name: NPM Install, lint, test and build
-        run: |
-          npm ci
-          npm run lint
-          npm test
-          ng e2e
-          npm run build
+      - name: Setup
+        run: npm ci
+
+      - name: Lint
+        run: npm run lint
+
+      - name: Unit Test
+        run: npm test
+
+      - name: E2E Test
+        run: ng e2e
