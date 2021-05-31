@@ -17,13 +17,9 @@ jobs:
           node-version: "14.x"
 
       - name: Setup
-        env:
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
         run: npm ci
 
       - name: Build
-        env:
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
         run: npm run build
 
       - name: Release
