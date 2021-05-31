@@ -10,7 +10,8 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "commit": "cz",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "deploy": "ng deploy --base-href=/material-components-theme-generator/"
   },
   "private": true,
   "dependencies": {
@@ -47,6 +48,7 @@
     "@typescript-eslint/eslint-plugin": "4.23.0",
     "@typescript-eslint/parser": "4.23.0",
     "all-contributors-cli": "^6.20.0",
+    "angular-cli-ghpages": "^1.0.0-rc.2",
     "cypress": "7.4.0",
     "cz-conventional-changelog": "^3.3.0",
     "eslint": "^7.26.0",
