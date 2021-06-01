@@ -18,6 +18,7 @@ A boiler-plate project to create an Open-Source Angular Application with set of 
 3. Follow the on-screen instructions
 4. [Create a Personal Access Token](https://docs.github.com/en/github/authenticating-to-github/keeping-your-account-and-data-secure/creating-a-personal-access-token) named `GH_TOKEN` with `repo` access
 5. Modify `--name` and `--email` in [`.github/workflows/release.yaml`](./.github/workflows/release.yaml)
+6. Update name and year in [`LICENSE`](./LICENSE)
 
 ## Tools included
 
