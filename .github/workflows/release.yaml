@@ -22,12 +22,12 @@ jobs:
       - name: Build
         run: npm run build
 
-      - name: Release
+      - name: Release through Semantic Release
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
         run: npx semantic-release
 
-      - name: Deploy
+      - name: Deploy on GitHub Pages
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
         run: npm run deploy -- --no-silent --name="mr. Dharmen's Bot" --email=shhdharmen@gmail.com
