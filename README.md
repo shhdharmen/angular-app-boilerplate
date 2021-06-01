@@ -6,6 +6,8 @@
 
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
+[![Twitter](https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Fgithub.com%2Fshhdharmen%2Fangular-app-boilerplate)](https://twitter.com/intent/tweet?&url=https://twitter.com/intent/tweet?url=https%3A%2F%2Fgithub.com%2Fshhdharmen%2Fangular-app-boilerplate&via=shhdharmen&text=A%20boiler-plate%20project%20to%20create%20an%20Open-Source%20@angular%20Application%20with%20set%20of%20most%20used%20and%20needed%20tooling.&hashtags=angular)
+
 A boiler-plate project to create an Open-Source Angular Application with set of most used and needed tooling.
 
 > This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.0.2.
