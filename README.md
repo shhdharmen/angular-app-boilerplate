@@ -14,7 +14,7 @@ A boiler-plate project to create an Open-Source Angular Application with set of 
 
 ## Create Project using this boiler-plate
 
-1. Go to <hthttps://github.com/shhdharmen/angular-app-boilerplate>
+1. Go to <https://github.com/shhdharmen/angular-app-boilerplate>
 2. Above the file list, click **Use this template**
   ![Use this template button](https://docs.github.com/assets/images/help/repository/use-this-template-button.png)
 3. Follow the on-screen instructions
