@@ -18,9 +18,18 @@ A boiler-plate project to create an Open-Source Angular Application with set of 
 2. Above the file list, click **Use this template**
   ![Use this template button](https://docs.github.com/assets/images/help/repository/use-this-template-button.png)
 3. Follow the on-screen instructions
-4. [Create a Personal Access Token](https://docs.github.com/en/github/authenticating-to-github/keeping-your-account-and-data-secure/creating-a-personal-access-token) named `GH_TOKEN` with `repo` access
-5. Modify `--name` and `--email` in [`.github/workflows/release.yaml`](./.github/workflows/release.yaml)
-6. Update name and year in [`LICENSE`](./LICENSE)
+4. [Create a Personal Access Token](https://docs.github.com/en/github/authenticating-to-github/keeping-your-account-and-data-secure/creating-a-personal-access-token) with `repo` access. Copy the token generated.
+5. [Create a secret](https://docs.github.com/en/actions/reference/encrypted-secrets#creating-encrypted-secrets-for-a-repository) named `GH_TOKEN` and paste the token generated previously in Value.
+6. Clone the newly created repo
+7. If needed, create new branch, preferably `beta`
+8. Modify `--name` and `--email` in [`.github/workflows/release.yaml`](./.github/workflows/release.yaml)
+9. Update name and year in [`LICENSE`](./LICENSE)
+10. Update email in [`CODE_OF_CONDUCT`](./CODE_OF_CONDUCT.md)
+11. Install dependencies: `npm i`
+12. Change version in `package.json` to `0.0.0`
+13. Develop your app and test it
+14. Commit your changes using `npm run commit`
+15. Push it and merge it with `main` branch
 
 ## Tools included
 
