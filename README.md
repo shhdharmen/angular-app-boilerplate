@@ -48,15 +48,6 @@ A boiler-plate project to create an Open-Source Angular Application with set of 
 
 ## Utilizing this boiler-plate
 
-Once you create the repo, clone in your machine and and...
-
-```bash
-cd project-dir
-```
-```bash
-npm i
-```
-
 ### Commit messages, Husky, linting and formatting
 
 ```bash
