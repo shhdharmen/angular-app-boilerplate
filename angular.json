@@ -7,7 +7,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "material-components-theme-generator": {
+    "angular-app-boilerplate": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -24,19 +24,14 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/material-components-theme-generator",
+            "outputPath": "dist/angular-app-boilerplate",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
-            "assets": [
-              "src/favicon.ico",
-              "src/assets"
-            ],
-            "styles": [
-              "src/styles.scss"
-            ],
+            "assets": ["src/favicon.ico", "src/assets"],
+            "styles": ["src/styles.scss"],
             "scripts": []
           },
           "configurations": {
@@ -76,10 +71,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "material-components-theme-generator:build:production"
+              "browserTarget": "angular-app-boilerplate:build:production"
             },
             "development": {
-              "browserTarget": "material-components-theme-generator:build:development"
+              "browserTarget": "angular-app-boilerplate:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -87,7 +82,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "material-components-theme-generator:build"
+            "browserTarget": "angular-app-boilerplate:build"
           }
         },
         "test": {
@@ -98,59 +93,51 @@
             "tsConfig": "tsconfig.spec.json",
             "karmaConfig": "karma.conf.js",
             "inlineStyleLanguage": "scss",
-            "assets": [
-              "src/favicon.ico",
-              "src/assets"
-            ],
-            "styles": [
-              "src/styles.scss"
-            ],
+            "assets": ["src/favicon.ico", "src/assets"],
+            "styles": ["src/styles.scss"],
             "scripts": []
           }
         },
         "lint": {
           "builder": "@angular-eslint/builder:lint",
           "options": {
-            "lintFilePatterns": [
-              "src/**/*.ts",
-              "src/**/*.html"
-            ]
+            "lintFilePatterns": ["src/**/*.ts", "src/**/*.html"]
           }
         },
         "cypress-run": {
           "builder": "@briebug/cypress-schematic:cypress",
           "options": {
-            "devServerTarget": "material-components-theme-generator:serve"
+            "devServerTarget": "angular-app-boilerplate:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "material-components-theme-generator:serve:production"
+              "devServerTarget": "angular-app-boilerplate:serve:production"
             }
           }
         },
         "cypress-open": {
           "builder": "@briebug/cypress-schematic:cypress",
           "options": {
-            "devServerTarget": "material-components-theme-generator:serve",
+            "devServerTarget": "angular-app-boilerplate:serve",
             "watch": true,
             "headless": false
           },
           "configurations": {
             "production": {
-              "devServerTarget": "material-components-theme-generator:serve:production"
+              "devServerTarget": "angular-app-boilerplate:serve:production"
             }
           }
         },
         "e2e": {
           "builder": "@briebug/cypress-schematic:cypress",
           "options": {
-            "devServerTarget": "material-components-theme-generator:serve",
+            "devServerTarget": "angular-app-boilerplate:serve",
             "watch": true,
             "headless": false
           },
           "configurations": {
             "production": {
-              "devServerTarget": "material-components-theme-generator:serve:production"
+              "devServerTarget": "angular-app-boilerplate:serve:production"
             }
           }
         },
@@ -161,5 +148,5 @@
       }
     }
   },
-  "defaultProject": "material-components-theme-generator"
+  "defaultProject": "angular-app-boilerplate"
 }
