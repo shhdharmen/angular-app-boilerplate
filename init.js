@@ -60,9 +60,17 @@ function updatePackageJSON() {
   });
 }
 
+function clearChangeLog() {
+  const filePath = "./CHANGELOG.md";
+  fs.writeFileSync(filePath, "", {
+    encoding: "utf-8",
+  });
+}
+
 updateReleaseYAML();
 updateLicense();
 updateCodeOfConduct();
 updatePackageJSON();
+clearChangeLog();
 
 fs.unlinkSync("./init.js");
