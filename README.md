@@ -22,14 +22,15 @@ A boiler-plate project to create an Open-Source Angular Application with set of 
 5. [Create a secret](https://docs.github.com/en/actions/reference/encrypted-secrets#creating-encrypted-secrets-for-a-repository) named `GH_TOKEN` and paste the token generated previously in Value.
 6. Clone the newly created repo
 7. If needed, create new branch, preferably `beta`
-8. Modify `--name` and `--email` in [`.github/workflows/release.yaml`](./.github/workflows/release.yaml)
-9. Update name and year in [`LICENSE`](./LICENSE)
-10. Update email in [`CODE_OF_CONDUCT`](./CODE_OF_CONDUCT.md)
-11. Install dependencies: `npm i`
-12. Change version in `package.json` to `0.0.0`
-13. Develop your app and test it
-14. Commit your changes using `npm run commit`
-15. Push it and merge it with `main` branch
+8. Run `node init.js "<BOT_NAME>" "<YOUR_EMAIL_ADDRESS>" "<FULL_NAME>"`, or if you can do following manually:
+   1. Modify `--name` and `--email` in [`.github/workflows/release.yaml`](./.github/workflows/release.yaml)
+   2.  Update name in [`LICENSE`](./LICENSE)
+   3.  Update email in [`CODE_OF_CONDUCT`](./CODE_OF_CONDUCT.md)
+   4.  Change version in `package.json` to `0.0.0`
+9.  Install dependencies: `npm i`
+10. Develop your app and test it
+11. Commit your changes using `npm run commit`
+12. Push it and merge it with `main` branch
 
 ## Tools included
 
